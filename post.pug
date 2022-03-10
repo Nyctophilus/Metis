@@ -1,0 +1,205 @@
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title NewsFlash | Post
+  // Favicon
+  link(rel='icon' type='image/png' sizes='32x32' href='./assets/images/favicon.png')
+  // Remix icons
+  link(href='https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css' rel='stylesheet')
+  // Swiper.js styles
+  link(rel='stylesheet' href='./assets/css/swiper-bundle.min.css')
+  // Custom styles
+  link(rel='stylesheet' href='./assets/css/main.css')
+// Header
+header.header
+  nav#navbar.navbar.container
+    a(href='./index.html')
+      h2.logo NewsFlash
+    #menu.menu
+      ul.list
+        li.list-item
+          a.list-link.current(href='#') Home
+        li.list-item
+          a.list-link(href='#') Categories
+        li.list-item
+          a.list-link(href='#') Reviews
+        li.list-item
+          a.list-link(href='#') News
+        li.list-item
+          a.list-link(href='#') Membership
+        li.list-item
+          a.list-link(href='#') Contact
+        li.list-item.screen-lg-hidden
+          a.list-link(href='./signin.html') Sign in
+        li.list-item.screen-lg-hidden
+          a.list-link(href='./signup.html') Sign up
+    .list.list-right
+      #theme-toggle-btn.icon-box.place-items-center
+        i.ri-sun-line.sun-icon
+        i.ri-moon-line.moon-icon
+      #search-icon.icon-box.place-items-center
+        i.ri-search-line
+      #menu-toggle-icon.icon-box.place-items-center.screen-lg-hidden.menu-toggle-icon
+        i.ri-menu-3-line.open-menu-icon
+        i.ri-close-line.close-menu-icon
+      a.list-link.screen-sm-hidden(href='#') Sign in
+      a.btn.sign-up-btn.fancy-border.screen-sm-hidden(href='#')
+        span Sign up
+// Search
+#search-form-container.search-form-container.container
+  .form-container
+    form.form(action='')
+      input.form-input(type='text' placeholder='What are you looking for?')
+      button.btn.form-btn.icon-box(type='submit')
+        i.ri-search-line
+    span.form-note Or press ESC to close.
+  #form-close-btn.btn.form-close-btn.icon-box.place-items-center
+    i.ri-close-line
+section.blog-post.section-header-offset
+  .blog-post-container.container
+    .blog-post-data
+      h3.title.blog-post-title
+        | Is VR the future?
+      .article-data
+        span Dec 6th 2021
+        span.article-data-spacer
+        span 4 Min read
+      img(src='./assets/images/featured/featured-1.jpg' alt='')
+    .container
+      p
+        | Lorem, ipsum dolor sit amet consectetur
+        | adipisicing elit. Debitis eius possimus hic
+        | eligendi distinctio rerum incidunt, esse quasi
+        | eum molestiae ducimus ipsam quae, aliquid ullam
+        | placeat dolorum nulla vero. Quam? Lorem ipsum
+        | dolor sit, amet consectetur adipisicing elit.
+        | Sapiente repellat consequatur culpa, repudiandae
+        | aut dolores iusto. Rem natus soluta, dolores, ad
+        | deleniti, aut dolorem corrupti quasi amet unde
+        | delectus hic?
+      p
+        | Lorem, ipsum dolor sit amet consectetur
+        | adipisicing elit. Debitis eius possimus hic
+        | eligendi distinctio rerum incidunt, esse quasi
+        | eum molestiae ducimus ipsam quae, aliquid ullam
+        | placeat dolorum nulla vero. Quam? Lorem ipsum
+        | dolor sit amet consectetur, adipisicing elit.
+        | Vero quod necessitatibus, aspernatur pariatur
+        | asperiores earum quas adipisci veritatis quidem
+        | facilis! Nihil veniam quaerat nulla possimus,
+        | asperiores vero voluptatum placeat. Eveniet!
+      blockquote.quote
+        p
+          span
+            i.ri-double-quotes-l
+          |               Lorem ipsum dolor sit amet consectetur
+          |               adipisicing elit. Officia voluptates,
+          |               laboriosam voluptatum quos non consequuntur
+          |               nesciunt necessitatibus tempora quod inventore
+          |               corporis rem nihil itaque, at provident minus
+          |               aliquam veritatis. Labore?
+          span
+            i.ri-double-quotes-r
+      p
+        | Lorem, ipsum dolor sit amet consectetur
+        | adipisicing elit. Debitis eius possimus hic
+        | eligendi distinctio rerum incidunt, esse quasi
+        | eum molestiae ducimus ipsam quae, aliquid ullam
+        | placeat dolorum nulla vero. Quam? Lorem ipsum
+        | dolor sit amet consectetur, adipisicing elit.
+        | Vero quod necessitatibus, aspernatur pariatur
+        | asperiores earum quas adipisci veritatis quidem
+        | facilis! Nihil veniam quaerat nulla possimus,
+        | asperiores vero voluptatum placeat. Eveniet!
+      .author.d-grid
+        .author-image-box
+          img.article-image(src='./assets/images/author.jpg' alt='')
+        .author-about
+          h3.author-name John Doe
+          p
+            | Lorem ipsum dolor sit amet consectetur,
+            | adipisicing elit. Eaque quis repellat rerum,
+            | possimus cumque dolor repellendus eligendi
+            | atque explicabo exercitationem id.
+          ul.list.social-media
+            li.list-item
+              a.list-link(href='#')
+                i.ri-instagram-line
+            li.list-item
+              a.list-link(href='#')
+                i.ri-facebook-circle-line
+            li.list-item
+              a.list-link(href='#')
+                i.ri-twitter-line
+// Footer
+footer.footer.section
+  .footer-container.container.d-grid
+    .company-data
+      a(href='./index.html')
+        h2.logo NewsFlash
+      p.company-description
+        | Lorem ipsum dolor sit amet consectetur
+        | adipisicing elit. Facere, iure. Harum, animi
+        | dolores, nam, ad magni expedita.
+      ul.list.social-media
+        li.list-item
+          a.list-link(href='#')
+            i.ri-instagram-line
+        li.list-item
+          a.list-link(href='#')
+            i.ri-facebook-circle-line
+        li.list-item
+          a.list-link(href='#')
+            i.ri-twitter-line
+        li.list-item
+          a.list-link(href='#')
+            i.ri-pinterest-line
+      span.copyright-notice
+        | &copy;2021 NewsFlash. All rights
+        | reserved.
+    div
+      h6.title.footer-title Categories
+      ul.footer-list.list
+        li.list-item
+          a.list-link(href='#') Travel
+        li.list-item
+          a.list-link(href='#') Food
+        li.list-item
+          a.list-link(href='#') Technology
+        li.list-item
+          a.list-link(href='#') Health
+        li.list-item
+          a.list-link(href='#') Nature
+        li.list-item
+          a.list-link(href='#') Fitness
+    div
+      h6.title.footer-title Useful links
+      ul.footer-list.list
+        li.list-item
+          a.list-link(href='#') Home
+        li.list-item
+          a.list-link(href='#') Elements
+        li.list-item
+          a.list-link(href='#') Tags
+        li.list-item
+          a.list-link(href='#') Authors
+        li.list-item
+          a.list-link(href='#') Membership
+    div
+      h6.title.footer-title Company
+      ul.footer-list.list
+        li.list-item
+          a.list-link(href='#') Contact us
+        li.list-item
+          a.list-link(href='#') F.A.Q
+        li.list-item
+          a.list-link(href='#') Careers
+        li.list-item
+          a.list-link(href='#') Authors
+        li.list-item
+          a.list-link(href='#') Memberships
+// Swiper.js
+script(src='./assets/js/swiper-bundle.min.js')
+// Custom script
+script(src='./assets/js/main.js')
