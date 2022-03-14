@@ -1,221 +1,92 @@
+
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-  <title>NewsFlash | Post</title>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Metis | Post</title>
   <!-- Favicon-->
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="./assets/images/favicon.png"
-  />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png"/>
   <!-- Remix icons-->
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
   <!-- Swiper.js styles-->
-  <link
-    rel="stylesheet"
-    href="./assets/css/swiper-bundle.min.css"
-  />
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
   <!-- Custom styles-->
-  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="./assets/css/main.css"/>
 </head>
 <!-- Header-->
 <header class="header">
-  <nav class="navbar container" id="navbar">
-    <a href="./index.html">
-      <h2 class="logo">NewsFlash</h2></a
-    >
+  <nav class="navbar container" id="navbar"><a href="./index.html">
+      <h2 class="logo">Metis</h2></a>
     <div class="menu" id="menu">
       <ul class="list">
-        <li class="list-item">
-          <a class="list-link current" href="#">Home</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Categories</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Reviews</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">News</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Membership</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Contact</a>
-        </li>
-        <li class="list-item screen-lg-hidden">
-          <a class="list-link" href="./signin.html"
-            >Sign in</a
-          >
-        </li>
-        <li class="list-item screen-lg-hidden">
-          <a class="list-link" href="./signup.html"
-            >Sign up</a
-          >
-        </li>
+        <li class="list-item"><a class="list-link current" href="#">Home</a></li>
+        <li class="list-item"><a class="list-link" href="#">Categories</a></li>
+        <li class="list-item"><a class="list-link" href="#">Reviews</a></li>
+        <li class="list-item"><a class="list-link" href="#">News</a></li>
+        <li class="list-item"><a class="list-link" href="#">Membership</a></li>
+        <li class="list-item"><a class="list-link" href="#">Contact</a></li>
+        <li class="list-item screen-lg-hidden"><a class="list-link" href="./signin.html">Sign in</a></li>
+        <li class="list-item screen-lg-hidden"><a class="list-link" href="./signup.html">Sign up</a></li>
       </ul>
     </div>
     <div class="list list-right">
-      <div
-        class="icon-box place-items-center"
-        id="theme-toggle-btn"
-      >
-        <i class="ri-sun-line sun-icon"></i
-        ><i class="ri-moon-line moon-icon"></i>
-      </div>
-      <div
-        class="icon-box place-items-center"
-        id="search-icon"
-      >
-        <i class="ri-search-line"></i>
-      </div>
-      <div
-        class="icon-box place-items-center screen-lg-hidden menu-toggle-icon"
-        id="menu-toggle-icon"
-      >
-        <i class="ri-menu-3-line open-menu-icon"></i
-        ><i class="ri-close-line close-menu-icon"></i>
-      </div>
-      <a class="list-link screen-sm-hidden" href="#"
-        >Sign in</a
-      ><a
-        class="btn sign-up-btn fancy-border screen-sm-hidden"
-        href="#"
-        ><span>Sign up</span></a
-      >
+      <div class="icon-box place-items-center" id="theme-toggle-btn"><i class="ri-sun-line sun-icon"></i><i class="ri-moon-line moon-icon"></i></div>
+      <div class="icon-box place-items-center" id="search-icon"><i class="ri-search-line"></i></div>
+      <div class="icon-box place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon"><i class="ri-menu-3-line open-menu-icon"></i><i class="ri-close-line close-menu-icon"></i></div><a class="list-link screen-sm-hidden" href="#">Sign in</a><a class="btn sign-up-btn fancy-border screen-sm-hidden" href="#"><span>Sign up</span></a>
     </div>
   </nav>
 </header>
 <!-- Search-->
-<div
-  class="search-form-container container"
-  id="search-form-container"
->
+<div class="search-form-container container" id="search-form-container">
   <div class="form-container">
     <form class="form" action="">
-      <input
-        class="form-input"
-        type="text"
-        placeholder="What are you looking for?"
-      />
-      <button class="btn form-btn icon-box" type="submit">
-        <i class="ri-search-line"></i>
-      </button>
-    </form>
-    <span class="form-note">Or press ESC to close.</span>
+      <input class="form-input" type="text" placeholder="What are you looking for?"/>
+      <button class="btn form-btn icon-box" type="submit"><i class="ri-search-line"></i></button>
+    </form><span class="form-note">Or press ESC to close.</span>
   </div>
-  <div
-    class="btn form-close-btn icon-box place-items-center"
-    id="form-close-btn"
-  >
-    <i class="ri-close-line"></i>
-  </div>
+  <div class="btn form-close-btn icon-box place-items-center" id="form-close-btn"><i class="ri-close-line"></i></div>
 </div>
 <section class="blog-post section-header-offset">
   <div class="blog-post-container container">
     <div class="blog-post-data">
-      <h3 class="title blog-post-title">
-        Is VR the future?
-      </h3>
-      <div class="article-data">
-        <span>Dec 6th 2021</span
-        ><span class="article-data-spacer"></span
-        ><span>4 Min read</span>
-      </div>
-      <img
-        src="./assets/images/featured/featured-1.jpg"
-        alt=""
-      />
+      <h3 class="title blog-post-title">Is VR the future?</h3>
+      <div class="article-data"><span>nov 22th 2021</span><span class="article-data-spacer"></span><span>12 Min read</span></div><img src="./assets/images/featured/featured-1.jpg" alt=""/>
     </div>
     <div class="container">
+      <p>Last month HTC Vive announced that it was partnering with in-car VR entertainment company Holoride to bring its new HTC Vive Flow to backseats everywhere. Powered by a blockchain ecosystem, the platform features one-of-a-kind “Elastic Content” that takes into account everything from the speed and movement of the vehicle to the length of the trip itself. This means no two in-car VR experiences will ever be exactly the same.</p>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Debitis eius possimus hic eligendi distinctio
-        rerum incidunt, esse quasi eum molestiae ducimus
-        ipsam quae, aliquid ullam placeat dolorum nulla
-        vero. Quam? Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Sapiente repellat consequatur
-        culpa, repudiandae aut dolores iusto. Rem natus
-        soluta, dolores, ad deleniti, aut dolorem corrupti
-        quasi amet unde delectus hic?
-      </p>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Debitis eius possimus hic eligendi distinctio
-        rerum incidunt, esse quasi eum molestiae ducimus
-        ipsam quae, aliquid ullam placeat dolorum nulla
-        vero. Quam? Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Vero quod necessitatibus,
-        aspernatur pariatur asperiores earum quas adipisci
-        veritatis quidem facilis! Nihil veniam quaerat nulla
-        possimus, asperiores vero voluptatum placeat.
-        Eveniet!
+        So, how exactly does this system work? Holoride partnered with a company called Terranet to utilize VoxelFlow, a system of sensors that captures movement data and transates it into gameplay in real-time. As previously mentioned, the open-source system is centered around a blockchain metaverse.
+        Not only does this offer developers an easier way to cash in on their creations, but it also allows manufacturers easier access to new games and apps. Passengers will even have the opportunity to buy and sell NFTs on the Elrond blockchain.
+        During MWC 2022 attendees had a chance to go hands-on with the platform as they toured around Barcelona. The system utilizes the aforementioned HTC Vive Flow to immerse passengers in their backseat VR experiences. The lightweight VR glasses feature a 100-degree field-of-view and 3.2K resolution with a refresh rate of 75 Hz.
       </p>
       <blockquote class="quote">
-        <p>
-          <span><i class="ri-double-quotes-l"></i></span>
-          Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Officia voluptates, laboriosam voluptatum
-          quos non consequuntur nesciunt necessitatibus
-          tempora quod inventore corporis rem nihil itaque,
-          at provident minus aliquam veritatis. Labore?<span
-            ><i class="ri-double-quotes-r"></i
-          ></span>
+        <p><span><i class="ri-double-quotes-l"></i></span>              Backseat VR technology will arrive on select Audi sedans and SUVs as soon as this Summer.
+                        Last month HTC Vive announced that it was partnering with in-car VR 
+                        entertainment company Holoride to bring its new HTC Vive Flow to backseats 
+                        everywhere. During SXSW this week it was announced that Holoride technology
+                        launching on select Audi sedans and SUVs with the new MIB 3 technology this 
+                        Summer, offering consumers their first taste of backseat VR entertainment. <span><i class="ri-double-quotes-r"></i></span>
         </p>
       </blockquote>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing
-        elit. Debitis eius possimus hic eligendi distinctio
-        rerum incidunt, esse quasi eum molestiae ducimus
-        ipsam quae, aliquid ullam placeat dolorum nulla
-        vero. Quam? Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Vero quod necessitatibus,
-        aspernatur pariatur asperiores earum quas adipisci
-        veritatis quidem facilis! Nihil veniam quaerat nulla
-        possimus, asperiores vero voluptatum placeat.
-        Eveniet!
+        Instead of a dedicated motion controls or hand-tracking, an Android smartphone is used as a 3DoF controller. Controls vary depending on the app. The VR game Space Slurpies, for example, has players controlling colorful intergalactic worms using the smartphones gyroscopic sensors.
+        We’ve been following Holoride’s backseat VR technology for quite some time, which is why news of their partnership with Audi is so exciting. By incorporating the real-world movements of a vehicle into the players experience, Holoride’s elastic content puts a whole new spin on location-based VR entertainment as well as haptic feedback technology.
+        We’re beyond excited to see how this platform continues to develop over time.
       </p>
       <div class="author d-grid">
-        <div class="author-image-box">
-          <img
-            class="article-image"
-            src="./assets/images/author.jpg"
-            alt=""
-          />
-        </div>
+        <div class="author-image-box"><img class="article-image" src="https://scontent.faly8-2.fna.fbcdn.net/v/t39.30808-6/275556387_5400468716652298_9192450998723177530_n.jpg?_nc_cat=107&amp;ccb=1-5&amp;_nc_sid=09cbfe&amp;_nc_ohc=2e9is5w9VTcAX8GwUJl&amp;_nc_ht=scontent.faly8-2.fna&amp;oh=00_AT8v3rwFBScDTz5c6drkpNrEvJICI_vfd9MDjFQHSUIyJg&amp;oe=623457CD" alt=""/></div>
         <div class="author-about">
-          <h3 class="author-name">John Doe</h3>
+          <h3 class="author-name">Muhammed Fayy</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Eaque quis repellat rerum,
-            possimus cumque dolor repellendus eligendi atque
-            explicabo exercitationem id.
+            Comupter Engineer,
+            Software Developer,
+            Web Development, Js Stack
+            Tech. Blogger.
           </p>
           <ul class="list social-media">
-            <li class="list-item">
-              <a class="list-link" href="#"
-                ><i class="ri-instagram-line"></i
-              ></a>
-            </li>
-            <li class="list-item">
-              <a class="list-link" href="#"
-                ><i class="ri-facebook-circle-line"></i
-              ></a>
-            </li>
-            <li class="list-item">
-              <a class="list-link" href="#"
-                ><i class="ri-twitter-line"></i
-              ></a>
-            </li>
+            <li class="list-item"><a class="list-link" href="#"><i class="ri-instagram-line"></i></a></li>
+            <li class="list-item"><a class="list-link" href="#"><i class="ri-facebook-circle-line"></i></a></li>
+            <li class="list-item"><a class="list-link" href="#"><i class="ri-twitter-line"></i></a></li>
           </ul>
         </div>
       </div>
@@ -225,102 +96,47 @@
 <!-- Footer-->
 <footer class="footer section">
   <div class="footer-container container d-grid">
-    <div class="company-data">
-      <a href="./index.html">
-        <h2 class="logo">NewsFlash</h2></a
-      >
-      <p class="company-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Facere, iure. Harum, animi dolores, nam, ad
-        magni expedita.
-      </p>
+    <div class="company-data"><a href="./index.html">
+        <h2 class="logo">Metis</h2></a>
+      <p class="company-description">Metis is a website which provides Blogging Tips, SEO Tips, Affiliate Marketing Tips also help newbie blogger to earn some money from their blog.</p>
       <ul class="list social-media">
-        <li class="list-item">
-          <a class="list-link" href="#"
-            ><i class="ri-instagram-line"></i
-          ></a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#"
-            ><i class="ri-facebook-circle-line"></i
-          ></a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#"
-            ><i class="ri-twitter-line"></i
-          ></a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#"
-            ><i class="ri-pinterest-line"></i
-          ></a>
-        </li>
-      </ul>
-      <span class="copyright-notice">
-        &copy;2021 NewsFlash. All rights reserved.</span
-      >
+        <li class="list-item"><a class="list-link" href="#"><i class="ri-instagram-line"></i></a></li>
+        <li class="list-item"><a class="list-link" href="#"><i class="ri-facebook-circle-line"></i></a></li>
+        <li class="list-item"><a class="list-link" href="#"><i class="ri-twitter-line"></i></a></li>
+        <li class="list-item"><a class="list-link" href="#"><i class="ri-pinterest-line"></i></a></li>
+      </ul><span class="copyright-notice">
+        &copy;2021 Metis. All rights
+        reserved.</span>
     </div>
     <div>
       <h6 class="title footer-title">Categories</h6>
       <ul class="footer-list list">
-        <li class="list-item">
-          <a class="list-link" href="#">Travel</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Food</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Technology</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Health</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Nature</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Fitness</a>
-        </li>
+        <li class="list-item"><a class="list-link" href="#">Travel</a></li>
+        <li class="list-item"><a class="list-link" href="#">Food</a></li>
+        <li class="list-item"><a class="list-link" href="#">Technology</a></li>
+        <li class="list-item"><a class="list-link" href="#">Health</a></li>
+        <li class="list-item"><a class="list-link" href="#">Nature</a></li>
+        <li class="list-item"><a class="list-link" href="#">Fitness</a></li>
       </ul>
     </div>
     <div>
       <h6 class="title footer-title">Useful links</h6>
       <ul class="footer-list list">
-        <li class="list-item">
-          <a class="list-link" href="#">Home</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Elements</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Tags</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Authors</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Membership</a>
-        </li>
+        <li class="list-item"><a class="list-link" href="#">Home</a></li>
+        <li class="list-item"><a class="list-link" href="#">Elements</a></li>
+        <li class="list-item"><a class="list-link" href="#">Tags</a></li>
+        <li class="list-item"><a class="list-link" href="#">Authors</a></li>
+        <li class="list-item"><a class="list-link" href="#">Membership</a></li>
       </ul>
     </div>
     <div>
       <h6 class="title footer-title">Company</h6>
       <ul class="footer-list list">
-        <li class="list-item">
-          <a class="list-link" href="#">Contact us</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">F.A.Q</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Careers</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Authors</a>
-        </li>
-        <li class="list-item">
-          <a class="list-link" href="#">Memberships</a>
-        </li>
+        <li class="list-item"><a class="list-link" href="#">Contact us</a></li>
+        <li class="list-item"><a class="list-link" href="#">F.A.Q</a></li>
+        <li class="list-item"><a class="list-link" href="#">Careers</a></li>
+        <li class="list-item"><a class="list-link" href="#">Authors</a></li>
+        <li class="list-item"><a class="list-link" href="#">Memberships</a></li>
       </ul>
     </div>
   </div>
